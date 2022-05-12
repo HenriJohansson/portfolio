@@ -12,7 +12,8 @@
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
-    --color-primary: rbga(77, 181, 255, 0.4);
+    --color-primary: #4bd5ff;
+    --color-primary-variant: rbga(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rbga(255, 255, 255, 0.6);
 
@@ -32,7 +33,7 @@ body {
     font-family: 'Red Hat Text', sans-serif;
     background-color: var(--color-bg);
     background-image: repeating-linear-gradient(45deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 64px)
-                    ,repeating-linear-gradient(90deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 30px)
+                    ,repeating-linear-gradient(90deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 10px,var(--color-ln) 10px, var(--color-ln) 11px,transparent 11px, transparent 30.17px)
                     ,repeating-linear-gradient(45deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 64px)
                     ,repeating-linear-gradient(135deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 64px)
                     ,linear-gradient(90deg, var(--color-bg),var(--color-bg-variant));
@@ -51,7 +52,7 @@ body {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
-    padding: 0.75 1.2;
+    padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
