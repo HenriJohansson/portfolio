@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -29,7 +29,7 @@ html {
 
 body {
     --color-ln: hsla(0, 0%, 0%, 0.1);
-    font-family: 'Asap', sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
     background-color: var(--color-bg);
     background-image: repeating-linear-gradient(45deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 64px)
                     ,repeating-linear-gradient(90deg, var(--color-ln) 0px, var(--color-ln) 1px,transparent 1px, transparent 6px,var(--color-ln) 6px, var(--color-ln) 7px,transparent 7px, transparent 30px)
@@ -57,6 +57,13 @@ body {
     border: 1px solid var(--color-primary);
     transition: var(--transition-speed);
 }
+
+.btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+    border-radius: transparent;
+}
+
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-bg);
@@ -67,11 +74,18 @@ img {
     width: 100%;
     object-fit: cover;
 }
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 h1 {
     font-size: 2.5rem;
+}
+section {
+    margin-top: 8rem;
 }
 
 section > h2,
