@@ -1,5 +1,7 @@
 import React from 'react'
-import './index.css'
+import './css/general.css'
+import './css/targeted.css'
+import './css/media.css'
 import { Header }  from './components/header/Header'
 import { Navigation }  from './components/navigation/Navigation'
 import { About }  from './components/about/About'
