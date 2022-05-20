@@ -1,4 +1,4 @@
-import { render, within, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import React from "react";
 import { unmountComponentAtNode } from "react-dom";
 
@@ -19,7 +19,7 @@ afterEach(() => {
 });
 
 test("renders Header and expects text", () => {
-    render(<Header/>)
-    const result = screen.queryByRole('h1',{ name: 'Henri Johansson'});
-    expect(result).toBeInTheDocument;
+  render(<Header/>)
+  const result = screen.queryByRole('h1',{ name: 'Henri Johansson'});
+  expect(result);
 });
