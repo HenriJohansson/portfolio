@@ -17,8 +17,8 @@ afterEach(() => {
   container.remove();
   container = null;
 });
-/*TODO figure out how to test */
-it("renders Header and expects text", () => {
+
+test("renders Header and expects text", () => {
     render(<Header/>)
     const result = screen.queryByRole('h1',{ name: 'Henri Johansson'});
     expect(result).toBeInTheDocument;

@@ -17,9 +17,7 @@ afterEach(() => {
   container.remove();
   container = null;
 });
-/*TODO test always passes, it is a problem. */
-it("Renders download", () => {
-    const a = screen.queryAllByRole('link');
-    expect(a[0]).toBeEmptyDOMElement;
+test("There are a correct amount of links inside the component", () => {
+  const a = screen.queryAllByRole('link');
+  expect(a).toHaveLength(2);
 });
-
