@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import { CallToAction } from './CallToAction'
-import { HeaderSocials } from './HeaderSocials'
+import { Socials } from './Socials'
 import Images from '../../resources/images'
 
 export const Header = () => {
@@ -12,7 +12,7 @@ export const Header = () => {
         <h1>Henri Johansson</h1>
         <h5 className='text-light'>Fullstack Developer</h5>
         <CallToAction/>
-        <HeaderSocials/>
+        <Socials/>
         <div className='me'>
           <img src={Images.me_transparent} alt='Me' ></img>
         </div>

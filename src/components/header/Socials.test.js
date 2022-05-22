@@ -1,15 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import React from "react";
 import { unmountComponentAtNode } from "react-dom";
-
-import { Header } from "./Header";
+import { Socials } from "./Socials";
 
 let container = null;
 beforeEach(() => {
   // setup a DOM element as a render target
   container = document.createElement("div");
   document.body.appendChild(container);
-  render(<Header/>)
+  render(<Socials/>);
 });
 
 afterEach(() => {
@@ -18,8 +17,6 @@ afterEach(() => {
   container.remove();
   container = null;
 });
-
-test("renders Header and expects text", () => {
-  const result = screen.queryByRole('h1',{ name: 'Henri Johansson'});
-  expect(result);
+test('There are at least two links for socials ', () => {
+    
 });
