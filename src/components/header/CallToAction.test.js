@@ -19,5 +19,5 @@ afterEach(() => {
 });
 test("There are a correct amount of links inside the component", () => {
   const a = screen.queryAllByRole('link');
-  expect(a).toHaveLength(2);
+  expect(a.length).toBeGreaterThanOrEqual(2);
 });

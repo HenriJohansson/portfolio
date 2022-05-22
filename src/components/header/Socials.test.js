@@ -18,5 +18,6 @@ afterEach(() => {
   container = null;
 });
 test('There are at least two links for socials ', () => {
-    
+  const result = screen.queryAllByRole('link').length;
+  expect(result).toBeGreaterThanOrEqual(2);
 });
