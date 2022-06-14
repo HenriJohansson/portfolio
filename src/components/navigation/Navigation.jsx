@@ -11,23 +11,32 @@ export const Navigation = () =>{
             <a href="#home"
                 onClick={() => setActiveNav('#home')}
                 className={activeNav === '#home' ? 'active' : 'inactive'}>
-                    <AiOutlineHome/></a>
+                <AiOutlineHome/>
+            </a>
+
             <a href="#about" 
                 onClick={() => setActiveNav('#about')}
                 className={activeNav === '#about' ? 'active' : 'inactive'}>
-                    <AiOutlineUser/></a>
+                <AiOutlineUser/>
+            </a>
+
             <a href="#experience"
             onClick={() => setActiveNav('#experience')}
             className={activeNav === '#experience' ? 'active' : 'inactive'}>
-                <BiBook/></a>
+                <BiBook/>
+            </a>
+
             <a href="#contact" 
             onClick={() => setActiveNav('#contact')}
             className={activeNav === '#contact' ? 'active' : 'inactive'}>
-                <RiServiceLine/></a>
+                <RiServiceLine/>
+            </a>
+
             <a href="#services" 
             onClick={() => setActiveNav('#services')}
             className={activeNav === '#services' ? 'active' : 'inactive'}>
-                <BiMessageSquareDetail/></a>
+                <BiMessageSquareDetail/>
+            </a>
         </nav>
     )
 }
